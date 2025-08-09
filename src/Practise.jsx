@@ -1,33 +1,38 @@
-import React from 'react'
-import { links } from './Data'
-import { NavLink } from 'react-router'
+                  // navbar
+//  import { links } from './Data'
+// import { NavLink } from 'react-router'
 
-const Practise = () => {
-  return(
-    <nav className='nav'>
-      <div className='nav-menu'>
-        <ul className='nav-list grid'>
-          {links.map(({name,icon,path},index) => {
-            return(
-              <li className='nav-item' key={index} >
-                <NavLink to={path} className={(isActive) => isActive? 'nav-link active-nav' : 'nav-link' }>
-                  {icon}
+// const Practise = () => {
+//   return(
+//     <nav className='nav'>
+//       <div className='nav-menu'>
+//         <ul className='nav-list grid'>
+//           {links.map(({name,icon,path},index) => {
+//             return(
+//               <li className='nav-item' key={index} >
+//                 <NavLink to={path} className={(isActive) => isActive? 'nav-link active-nav' : 'nav-link' }>
+//                   {icon}
 
-                  <h3 className='nav-name'> {name} </h3>
+//                   <h3 className='nav-name'> {name} </h3>
 
-                </NavLink>
+//                 </NavLink>
 
-              </li>
-            )
-          } )}
+//               </li>
+//             )
+//           } )}
 
-        </ul>
-      </div>
-    </nav>
-  )
-}
+//         </ul>
+//       </div>
+//     </nav>
+//   )
+// }
 
-export default Practise
+// export default Practise
+
+
+
+
+
 
 
 
