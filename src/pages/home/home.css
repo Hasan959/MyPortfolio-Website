@@ -13,6 +13,12 @@
     border-radius: 2rem;
 }
 
+.home-title{
+    font-size: var(--h1-font-size);
+    padding-left: 4.25rem;
+    position: relative;
+}
+
 .home-title span {
     color: var(--first-color);
 }
@@ -21,5 +27,21 @@
     content: '';
     position: absolute;
     top: 22%;
-    left: 0;;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    border-radius: 0.5rem;
+    background-color: var(--first-color);
+
+}
+.home-description{
+    line-height: 1.75;
+    max-width: 600px;
+    margin-block: 1.5rem 2.5rem;
+}
+
+.color-block {
+    position: fixed;
+    width: 30%;
+    height: 150%;
 }
