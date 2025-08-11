@@ -11,6 +11,7 @@
     width: 100%;
     object-fit: cover;
     border-radius: 2rem;
+    z-index: 10;
 }
 
 .home-title{
@@ -44,4 +45,9 @@
     position: fixed;
     width: 30%;
     height: 150%;
+    background-color: var(--first-color);
+    transform: rotate(-16deg);
+    top: -12%;
+    left: -12%;
+
 }
