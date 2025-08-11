@@ -7,7 +7,8 @@ const Home = () => {
   return (
   <section className="home-container grid">
     <img src={profile} alt="" className="home-img" />
-    <h1 className="home-title"> 
+    <div className='home-content'>
+      <h1 className="home-title"> 
       <span>I'm Hasan Mahmud</span> <br /> Web Designer
     </h1>
 
@@ -22,6 +23,7 @@ const Home = () => {
         <RiArrowRightLine />
       </span>
     </Link>
+    </div>
     <div className="color-block"></div>
 
   </section>

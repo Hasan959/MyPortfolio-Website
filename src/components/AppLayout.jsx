@@ -7,7 +7,7 @@ const AppLayout = () => {
     <div>
         <Navbar/>
         <Outlet/>
-        <Themes/>
+        {/* <Themes/> */}
     </div>
   )
 }
