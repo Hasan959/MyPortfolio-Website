@@ -1,0 +1,17 @@
+.about-container{
+    grid-template-columns: repeat(2,1fr);
+    align-items: flex-start;
+    gap: 1.75rem;
+}
+.section-subtitle {
+    font-size: var(--h3-font-size);
+    font-weight: var(--weight-700);
+    margin-bottom: 3rem;
+}
+
+.info-list {
+   
+    row-gap: 1.25rem;
+    margin-bottom: 2.25rem;
+    
+}

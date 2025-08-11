@@ -1,8 +1,20 @@
-import React from 'react'
+import { personalInfo } from "../Data"
+
 
 const Info = () => {
   return (
-    <div>Info</div>
+    <>
+      {personalInfo.map(({title,description}, index) =>{
+        return (
+          <li className="info-item" key={index} >
+            <span className="info-title">{title}</span>
+            <span className="info-description">{description}</span>
+
+          </li>
+        )
+      } )  }
+      
+    </>
   )
 }
 
