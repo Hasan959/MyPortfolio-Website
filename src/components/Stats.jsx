@@ -4,7 +4,7 @@ import parse from 'html-react-parser'
 
 const Stats = () => {
   return (
-    <div>
+    <>
         {stats.map(({no, title},index) => {
             return (
                 <div className="stats-box" key={index} >
@@ -13,7 +13,7 @@ const Stats = () => {
                 </div>
             )
         })}
-    </div>
+    </>
   )
 }
 

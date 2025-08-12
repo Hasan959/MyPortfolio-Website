@@ -1,7 +1,8 @@
-.about-container{
+.about-container, .info-list, .stats,.skills-container{
     grid-template-columns: repeat(2,1fr);
     align-items: flex-start;
     gap: 1.75rem;
+    
 }
 .section-subtitle {
     font-size: var(--h3-font-size);
@@ -14,4 +15,75 @@
     row-gap: 1.25rem;
     margin-bottom: 2.25rem;
     
+}
+
+.info-title, .info-description {
+   font-size: var(--small-font-size)
+}
+
+.info-description {
+    color: var(--title-color);
+}
+
+.stats-box {
+    border: 1px solid var(--border-color);
+    padding: 1.25rem 2rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.stats-no {
+    color: var(--first-color);
+    font-size: var(--h2-font-size);
+    margin-bottom: 0.25rem;
+}
+
+.stats-title {
+  padding-left: 2.75rem;
+  font-size: var(--small-font-size);
+  line-height: 1.5;
+  position: relative;
+
+}
+
+.stats-title::before{
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    background-color: var(--text-color);
+
+}
+
+.separator {
+    max-width: 450px;
+    border-top: 1px solid var(--border-color);
+    margin: 4.5rem auto;
+}
+
+.subtitle-center{
+    text-align: center;
+}
+.skills-container{
+    column-gap: 10rem;
+}
+.skills-title{
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-700);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.skills-items {
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+.skills-data{
+    text-align: center;
+}
+.skills-blob{
+    width: 80px;
+    height: 108px;
+    background-color: var(--container-color);
+    border-radius: 3rem;
 }

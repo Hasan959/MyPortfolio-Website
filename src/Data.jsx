@@ -1,5 +1,18 @@
 import { FaHome, FaUser, FaFolderOpen, FaEnvelopeOpen } from 'react-icons/fa';
 
+import skillsImg1 from './assets/html-logo.svg';
+import skillsImg2 from './assets/css-logo.svg';
+import skillsImg3 from './assets/javascript-logo.svg';
+import skillsImg4 from './assets/react-logo.svg';
+import skillsImg5 from './assets/tailwind-css-logo.svg';
+
+import skillsImg6 from './assets/figma-logo.svg';
+import skillsImg7 from './assets/sketch-logo.svg';
+import skillsImg8 from './assets/adobe-xd-logo.svg';
+import skillsImg9 from './assets/adobe-photoshop-logo.svg';
+import skillsImg10 from './assets/invision-logo.svg';
+
+
 export const links = [
   {
     name: 'Home',
@@ -82,24 +95,106 @@ export const personalInfo = [
 
 export const stats = [
   {
-    no: '12+',
+    no: '1+',
     title: 'Years of <br /> Experience',
   },
 
   {
-    no: '97+',
+    no: '10+',
     title: 'Completed <br /> Projects',
   },
 
   {
-    no: '81+',
+    no: '++',
     title: 'Happy <br /> Customers',
   },
 
   {
-    no: '53+',
+    no: '++',
     title: ' Awards <br /> Won',
   },
 ];
 
+
+export const skill = [
+  {
+    id: 1,
+    img: skillsImg1,
+    title: 'HTML',
+    level: 'Intermediate',
+    category: 'developer',
+  },
+
+  {
+    id: 2,
+    img: skillsImg2,
+    title: 'CSS',
+    level: 'Advanced',
+    category: 'developer',
+  },
+
+  {
+    id: 3,
+    img: skillsImg3,
+    title: 'JavaScript',
+    level: 'Intermediate',
+    category: 'developer',
+  },
+
+  {
+    id: 4,
+    img: skillsImg4,
+    title: 'React',
+    level: 'Basic',
+    category: 'developer',
+  },
+
+  {
+    id: 5,
+    img: skillsImg5,
+    title: 'Tailwind',
+    level: 'Intermediate',
+    category: 'developer',
+  },
+
+  {
+    id: 6,
+    img: skillsImg6,
+    title: 'Figma',
+    level: 'Advanced',
+    category: 'designer',
+  },
+
+  {
+    id: 7,
+    img: skillsImg7,
+    title: 'Sketch',
+    level: 'Basic',
+    category: 'designer',
+  },
+
+  {
+    id: 8,
+    img: skillsImg8,
+    title: 'Adobe XD',
+    level: 'Intermediate',
+    category: 'designer',
+  },
+
+  {
+    id: 9,
+    img: skillsImg9,
+    title: 'Photoshop',
+    level: 'Intermediate',
+    category: 'designer',
+  },
+
+  {
+    id: 10,
+    img: skillsImg10,
+    title: 'InvisionApp',
+    level: 'Basic',
+    category: 'designer',
+  },
+];
 
