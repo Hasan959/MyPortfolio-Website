@@ -1,4 +1,8 @@
-.about-container, .info-list, .stats,.skills-container{
+.about-container,
+.info-list, 
+.stats,
+.skills-container, 
+.resume-container{
     grid-template-columns: repeat(2,1fr);
     align-items: flex-start;
     gap: 1.75rem;
@@ -86,4 +90,55 @@
     height: 108px;
     background-color: var(--container-color);
     border-radius: 3rem;
+    display: grid;
+    place-items: center;
+    margin-inline: auto;
+}
+.skills-img{
+    width: 40px;
+}
+.skills-name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--weight-700);
+    margin-block: 1rem 0.25rem;
+}
+
+.skills-level {
+    font-size: var(--smaller-font-size);
+}
+
+.resume-group {
+    row-gap: 3rem;
+}
+
+.resume-item {
+    padding-left: 3.75rem;
+    position: relative;
+}
+
+.resume-item::before {
+    content: '';
+    position: absolute;
+    inset: 0 auto 0 1.25rem;
+    border-left: 1px solid var(--border-color);
+}
+
+.resume-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--white-color);
+    background-color: var(--first-color);
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: var(--large-font-size);
+}
+
+.resume-date {
+    background-color: var(--container-color);
+    padding:0.25rem 0.75rem;
+    border-radius: 1rem;
 }

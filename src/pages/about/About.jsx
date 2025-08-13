@@ -4,8 +4,9 @@ import { RiDownload2Line } from "react-icons/ri";
 import Cv from '../../pdf/cv of Hasan Mahmud.pdf'
 import Stats from '../../components/Stats';
 import './about.css'
-import { skill } from '../../Data';
+import { resume, skill } from '../../Data';
 import Skillsitem from '../../components/Skillsitem';
+import ResumeItem from '../../components/ResumeItem';
 
 
 const About = () => {
@@ -41,7 +42,10 @@ const About = () => {
 
       </section>
 
+
       <div className="separator"></div>
+
+
 
       <section className="skills">
 
@@ -74,6 +78,43 @@ const About = () => {
             </div>
         </div>
       </section>
+
+       <div className="separator"></div>
+
+       <section className="skills">
+
+        <div className="separator"></div>
+
+        <div className="resume">
+          <h3 className="section-subtitle subtitle center">
+            Experience & Education
+          </h3>
+
+          <div className="resume-container grid">
+            <div className="resume-group grid ">
+              {resume.map((val)=> {
+                if (val.category==='experience'){
+                  return <ResumeItem key={val.id} {...val} />
+                }
+              } )}
+            </div>
+
+            
+              <div className="resume-group grid">
+                {resume.map((val)=>{
+                  if(val.category ==='education') {
+                    return <ResumeItem key={val.id} {...val} />
+                  }
+                } )}
+
+              </div>
+            
+          </div>
+        </div>
+       </section>
+
+
+
     </main>
   )
 }

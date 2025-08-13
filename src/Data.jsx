@@ -1,4 +1,5 @@
 import { FaHome, FaUser, FaFolderOpen, FaEnvelopeOpen } from 'react-icons/fa';
+import { RiBriefcase4Fill, RiGraduationCapFill } from 'react-icons/ri';
 
 import skillsImg1 from './assets/html-logo.svg';
 import skillsImg2 from './assets/css-logo.svg';
@@ -198,3 +199,58 @@ export const skill = [
   },
 ];
 
+export const resume = [
+  {
+    id: 1,
+    category: 'experience',
+    icon: <RiBriefcase4Fill />,
+    year: '2018 - Present',
+    title: 'Web Developer <span> Envato </span>',
+    desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit.',
+  },
+
+  {
+    id: 2,
+    category: 'experience',
+    icon: <RiBriefcase4Fill />,
+    year: '2013 - 2018',
+    title: 'UI/UX Designer <span> Themeforest </span>',
+    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt.',
+  },
+
+  {
+    id: 3,
+    category: 'experience',
+    icon: <RiBriefcase4Fill />,
+    year: '2005 - 2013',
+    title: 'Consultant <span> Videohive </span>',
+    desc: 'Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur elit, sed do eiusmod tempor duntt.',
+  },
+
+  {
+    id: 4,
+    category: 'education',
+    icon: <RiGraduationCapFill />,
+    year: '2015',
+    title: 'Engineering Degree <span> Oxford University </span>',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore.',
+  },
+
+  {
+    id: 5,
+    category: 'education',
+    icon: <RiGraduationCapFill />,
+    year: '2012',
+    title: 'Master Degree <span> KIEV University </span>',
+    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt.',
+  },
+
+  {
+    id: 6,
+    category: 'education',
+    icon: <RiGraduationCapFill />,
+    year: '2009',
+    title: 'Bachelor Degree <span> Tunis High School </span>',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore.',
+  },
+];
