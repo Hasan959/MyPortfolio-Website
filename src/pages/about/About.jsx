@@ -85,10 +85,13 @@ const About = () => {
 
         <div className="separator"></div>
 
+        
+
         <div className="resume">
-          <h3 className="section-subtitle subtitle center">
+          <h3 className="section-subtitle subtitle-center">
             Experience & Education
           </h3>
+
 
           <div className="resume-container grid">
             <div className="resume-group grid ">
