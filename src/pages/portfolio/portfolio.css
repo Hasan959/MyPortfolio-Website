@@ -44,3 +44,18 @@
 .portfolio-skill {
     width: 16px;
 }
+.portfolio-link {
+    color: var(--title-color);
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.portfolio-link:hover {
+    color: var(--text-color);
+}
+
+.link-icon {
+    font-size: 1.25rem;
+}
