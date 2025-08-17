@@ -64,17 +64,21 @@ const Contact = () => {
 
         </div>
 
-        <form action="" className="contatc-form grid">
+        <form action="" className="contact-form grid">
 
           <div className="contact-form-group grid">
 
              <div className="contact-form-div">
-                <label htmlFor="" className="contact-form-label">Your full Name</label>
+                <label htmlFor="" className="contact-form-label">
+                  Your full Name
+                </label>
                 <input type="text" name="name" className="contact-form-input" />
              </div>
 
              <div className="contact-form-div">
-                <label htmlFor="" className="contact-form-label">Your Email Address</label>
+                <label htmlFor="" className="contact-form-label">
+                  Your Email Address 
+                </label>
                 <input type="email" name="email" className="contact-form-input" />
             </div>
 
