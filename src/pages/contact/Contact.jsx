@@ -1,4 +1,5 @@
 import { RiMap2Line ,RiUser3Line ,RiMailLine ,RiBook2Line ,RiSendPlaneLine } from "react-icons/ri";
+import './contact.css'
 
 
 const Contact = () => {

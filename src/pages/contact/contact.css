@@ -1,0 +1,15 @@
+.contact-container {
+    grid-template-columns: 5fr 7fr;
+    align-items: flex-start ;
+    gap: 3rem 1.5rem;
+}
+
+.contact-content{
+    padding-top: 0.5rem;
+    row-gap: 2.5rem;
+}
+
+.contact-card{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
