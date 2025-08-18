@@ -60,7 +60,25 @@
 
 .contact-form-label{
     text-indent: 1.5rem;
+    font-size: var(--small-font-size);
+}
+
+.contact-form-label b {
+    color: var(--first-color);
 }
 .contact-form-input{
     background-color: var(--container-color);
+    color: var(--title-color);
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.contact-form-area{
+    resize: none;
+    height: 140px;
+}
+
+.contact-button {
+    justify-self: flex-end;
+    margin-top: 1.5rem;
 }
