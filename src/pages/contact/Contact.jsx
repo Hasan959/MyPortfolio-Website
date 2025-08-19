@@ -34,7 +34,9 @@ const Contact = () => {
       setFeedbackMessage('write all the input fields');
       
       
-      setTimeout(()=>setFeedbackMessage(''),3000)
+      setTimeout(()=>setFeedbackMessage(''),3000);
+
+      setFormData({ name:'', email: '', subject: '', message: ''});
 
      return;
     }
@@ -48,6 +50,8 @@ const Contact = () => {
           setFeedbackMessage('Message sent ✔');
 
           setTimeout(()=>setFeedbackMessage(''),5000);
+
+          setFormData({ name:'', email: '', subject: '', message: ''});
         },
         (error) => {
          alert('OOPs! SOMETHING WENT WRONG...',error);
@@ -129,7 +133,8 @@ const Contact = () => {
                name="name" 
                onChange={handleChange} 
                value={formData.name}
-               className="contact-form-input" />
+               className={`contact-form-input ${formData.name ? 'has-value': ''}`}
+                />
             </div>
 
             <div className="contact-form-div">
@@ -141,7 +146,7 @@ const Contact = () => {
               name="email" 
               onChange={handleChange}
               value={formData.email}
-              className="contact-form-input"
+              className={`contact-form-input ${formData.email ? 'has-value' : ''} `}
               />
             </div>
 
@@ -157,7 +162,7 @@ const Contact = () => {
             name="subject" 
             onChange={handleChange}
             value={formData.subject}
-            className="contact-form-input" />
+            className={`contact-form-input ${formData.subject ? 'has-value' : ''} `}/>
 
           </div>
 
@@ -170,7 +175,7 @@ const Contact = () => {
             name="message" 
             onChange={handleChange}
             value={formData.message}
-            className="contact-form-input contact-form-area" 
+            className={`contact-form-input ${formData.message ? 'has-value' : ''} `}
             id="">
             </textarea>
 
