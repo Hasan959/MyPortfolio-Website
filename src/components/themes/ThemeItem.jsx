@@ -1,8 +1,8 @@
-import React from 'react'
 
-const ThemeItem = () => {
+
+const ThemeItem = ({hue,img}) => {
   return (
-    <div>ThemeItem</div>
+    <img src={img} alt="" className="theme-img"/>
   )
 }
 
