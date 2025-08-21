@@ -30,7 +30,7 @@ const Themes = () => {
        <h3 className="switcher-title">Style Switcher</h3>
        <div className="switcher-items grid"> 
          {themes.map((theme,index) => {
-          return <ThemeItem key={index} {...theme}/>
+          return <ThemeItem key={index} {...theme} changeColor={changeColor}/>
          } )}
        </div>
 

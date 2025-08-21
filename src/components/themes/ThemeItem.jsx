@@ -1,8 +1,10 @@
 
 
-const ThemeItem = ({hue,img}) => {
+const ThemeItem = ({hue,img,changeColor}) => {
   return (
-    <img src={img} alt="" className="theme-img"/>
+    <img src={img} alt="" className="theme-img" onClick={()=> {
+      changeColor(hue);
+    }}/>
   )
 }
 
