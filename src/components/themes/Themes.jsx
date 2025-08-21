@@ -3,11 +3,20 @@ import { BsMoon, BsSun } from "react-icons/bs";
 import { themes } from "../../Data";
 import ThemeItem from "./ThemeItem";
 import './theme.css'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Themes = () => {
 
-  const[showSwitcher,setShowSwitcher]=useState(false)
+  const[showSwitcher,setShowSwitcher]=useState(false);
+   const[color,setColor]=useState('2');
+
+   const changeColor = (color) => {
+    setColor(color);
+   }
+
+   useEffect(()=> {
+    document.documentElement.style.setProperty('--hue',color)
+   }, [color]);
   return (
     <div className={`${showSwitcher ? 'show-switcher' : ''} style-switcher`}>
       <div className="switcher-toggler" onClick={() =>setShowSwitcher(!showSwitcher)}>
@@ -25,7 +34,7 @@ const Themes = () => {
          } )}
        </div>
 
-       <div className="switcher-close">
+       <div className="switcher-close" onClick={() =>setShowSwitcher(!showSwitcher)}>
         &times;
         </div> 
 

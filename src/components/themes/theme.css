@@ -54,7 +54,13 @@
    display: grid;
    place-items: center;
    border: 1px solid hsl(var(--hue), 4%,91%);
+   transition: left 0.3s ease;
+ 
 
+}
+
+.show-switcher :is(.switcher-toggler, .theme-toggler) {
+    left: -100%;
 }
 
 .switcher-toggler{
