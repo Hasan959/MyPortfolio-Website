@@ -15,7 +15,8 @@ const Themes = () => {
    }
 
    useEffect(()=> {
-    document.documentElement.style.setProperty('--hue',color)
+    document.documentElement.style.setProperty('--hue',color);
+    localStorage.setItem('color',color)
    }, [color]);
   return (
     <div className={`${showSwitcher ? 'show-switcher' : ''} style-switcher`}>
